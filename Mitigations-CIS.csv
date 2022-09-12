@@ -1,0 +1,32 @@
+﻿Object,Mitigations
+Ransomware,Update or create an incident response plan that includes what to do during a ransomware event.
+Ransomware,"If not already being done, perform regular system backups. As ransomware is known to delete Volume Shadow Copies, ensure that backups are created and stored off-site or out-of-band. Also, use a backup strategy that allows multiple iterations of the backups to be saved and stored, in case the backups include encrypted or infected files. Routinely test backups for data integrity and to ensure you can recover from them."
+Ransomware,"For any publicly-exposed services, such as Remote Desktop Protocol (RDP), Virtual Network Computing (VNC), and File Transfer Protocol (FTP), assess the need for exposure to the Internet. Consider applying additional controls, such as IP whitelisting or multi-factor authentication, where possible."
+Ransomware,"Assess the need to have Remote Desktop Protocol (port 3389) and Server Message Block (SMB) (port 445) open on systems and, if required, consider limiting allowed connections to only specific, trusted hosts."
+Ransomware,Enable heightened monitoring for SMB activity throughout the network. Make sure to disable SMBv1 on all systems and utilize SMBv2 or SMBv3 after appropriate testing.
+Ransomware,"Consider filtering inbound and outbound traffic based on IP addresses (and ports), leveraging geographic blocking and threat-based blocking."
+Ransomware,"Implement filters at the email gateway to filter out emails with known malspam indicators, such as known malicious subject lines, and block suspicious IP addresses at the firewall."
+Ransomware,Provide end-user training to help users identify suspicious emails or links and ensure that users are aware of the potential dangers of opening unsolicited emails. Also ensure users are aware of any support policies and procedures in place for assistance.
+Ransomware,"If you do not have a policy regarding suspicious emails, consider creating one and specify that all suspicious emails should be reported to the security and/or IT departments."
+Ransomware,"Ensure all user accounts fall under (and are not exempt from) acceptable policies associated with password aging, password complexity, and account lockout."
+Ransomware,Perform network segmentation according to organizational functionality and apply access controls between trust zones.
+Ransomware,"Adhere to the principal of least privilege, ensuring that users have the minimum level of access required to accomplish their duties. Limit administrative credentials to designated administrators and never reuse the same credentials across multiple accounts or systems."
+Ransomware,Review any vendor accounts and their associated passwords to ensure they have been changed from their default settings.
+Ransomware,"If remote access for the user account is required by a third-party vendor, consider developing a process that keeps the user account disabled until access is needed."
+Ransomware,"Implement robust Windows Event logging, including an increase in the maximum file size for the Event Logs. Centralize and protect these logs out-of-bound and consider a backup solution, to help prevent counter-forensic log during an active compromise."
+Ransomware,Utilize application whitelisting on all assets to ensure that only authorized software executes and all unauthorized software is blocked from executing. (CIS Subcontrol 2.7)
+Ransomware,Restrict PowerShell execution to signed scripts and trusted scripts used for administration.
+Ransomware,Ensure that the organization’s anti-malware software updates its scanning engine and signature database on a regular basis. (CIS Subcontrol 8.2)
+Ransomware,"Strongly consider utilizing behavioral-based detection methods, as they can help identify the malicious use of open source penetration testing suites and legitimate network administration tools."
+Ransomware,"Implement a centrally-managed, up-to-date anti-malware solution. In addition to valuable preventive and corrective capabilities, detective controls provided by anti-malware software are beneficial in providing awareness of any threats which may become active within the environment."
+Ransomware,"Keep all operating systems, applications, and essential software patched and remove unsupported legacy systems to mitigate easy exploitation. This may include purchasing extended support for legacy systems that are critical to operations."
+Ransomware,"If not already being done, consider implementing an Intrusion Detection System (IDS) to detect command and control (C2) activity and other potentially malicious network activity, such as the MS-ISAC’s Albert system."
+Ransomware,"Ensure that systems are hardened with industry-accepted guidelines, such as those provided by the CIS Benchmarks"
+Ransomware,"Review and consider implementation of the 20 CIS Controls, where appropriate, as a means of bolstering your organization’s security posture."
+Data Breaches,Encryption is implemented both at rest and in transit.
+Data Breaches,Third parties and vendors that have access to healthcare networks or databases are also properly handling patient data. 
+Data Breaches,"Training on proper usage and handling of PHI is recommended to reduce data breaches caused by employee error, such as a lost device or accidental disclosure."
+DDoS Attacks,Guide to DDoS Attacks: https://www.cisecurity.org/insights/white-papers/technical-white-paper-guide-to-ddos-attacks
+Insider Threats,"Training your users and employees on how to recognize and report an insider threat, or prevent them from inadvertently becoming one, is the best way to protect your organization. "
+Insider Threats,The Carnegie Mellon CERT tracks insiders and is a great place about insider threats to start.
+Business Email Compromise and Fraud Scams,General recommendations against phishing emails: https://www.cisecurity.org/insights/white-papers/ms-isac-security-primer-spear-phishing

@@ -1,0 +1,23 @@
+﻿Object,Mitigations
+Employee Based Security - Train Employees to Develop Better Security Habits,Create a strong password. 
+Employee Based Security - Train Employees to Develop Better Security Habits,Consider using a password manager. 
+Employee Based Security - Train Employees to Develop Better Security Habits,"Use multi-factor authentication, if available. "
+Employee Based Security - Train Employees to Develop Better Security Habits,Use security questions properly. 
+Employee Based Security - Train Employees to Develop Better Security Habits,Create unique accounts for each user per device. 
+Employee Based Security - Train Employees to Develop Better Security Habits,Be suspicious of unexpected emails. 
+Employee Based Security - Train Employees to Develop Better Security Habits,Keep all of your personal electronic device software current. 
+Network Based Security Practices,Use and maintain anti-virus software and a firewall.
+Network Based Security Practices,Regularly scan for spyware.
+Network Based Security Practices,Keep software up to date.
+Network Based Security Practices,Evaluate your software settings.
+Network Based Security Practices,Avoid unused software programs.
+Network Based Security Practices,Establish guidelines for computer use.
+Network Based Security Practices,Encrypt sensitive files.
+Network Based Security Practices,Dispose of sensitive information properly.
+Physical Security Practices,Password-protect all computers.
+Physical Security Practices,Consider using physical locks on devices with sensitive information.
+Physical Security Practices,Consider an alarm or lock.
+Physical Security Practices,Back up your files.
+Physical Security Practices,Implement physical access control plans.
+Physical Security Practices,Conduct background checks as part of the hiring process when hiring someone who will have access to sensitive information.
+Zero Trust Approach,Verify access of users on each device and include MFA technologies. The extra layer of security could help prevent breaches.

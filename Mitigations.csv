@@ -1,0 +1,76 @@
+﻿Threat/Breach Type,Impact,Mitigations
+Brute Force,"1. Temporary or permanent loss of sensitive or proprietary information.
+2. Disruption to regular operations.
+3. Financial losses incurred to restore systems and files.
+4. Potential harm to an organization’s reputation.","1. Enable MFA and review MFA settings to ensure coverage over all active, internet facing protocols.
+2. Review password policies to ensure they align with the latest NIST guidelines [3] and deter the use of easy-to-guess passwords.
+3. Review IT helpdesk password management related to initial passwords, password resets for user lockouts, and shared accounts. IT helpdesk password procedures may not align to company policy, creating an exploitable security gap.
+4. Many companies offer additional assistance and tools the can help detect and prevent password spray attacks, such as the Microsoft blog released on March 5, 2018."
+Buffer Overflow,1. Result in a denial-of-service condition impacting network communications and allow arbitrary code execution.,"1. Update the version firmware or upload a patch to fix it.
+2. Minimize network exposure for all control system devices and/or systems, and ensure they are not accessible from the Internet.
+3. Locate control system networks and remote devices behind firewalls and isolate them from the business network.
+4. When remote access is required, use secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most current version available. Also recognize VPN is only as secure as its connected devices.
+5. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures."
+Denial of service,"1. Unusually slow network performance (opening files or accessing websites).
+2. Unavailability of a particular website.
+3. An inability to access any website.","1. Enroll in a DoS protection service that detects abnormal traffic flows and redirects traffic away from your network. The DoS traffic is filtered out, and clean traffic is passed on to your network.
+2. Create a disaster recovery plan to ensure successful and efficient communication, mitigation, and recovery in the event of an attack.
+3. Install and maintain antivirus software.
+4. Install a firewall and configure it to restrict traffic coming into and leaving your computer.
+5. Evaluate security settings and follow good security practices in order to minimalize the access other people have to your information, as well as manage unwanted traffic (see Good Security Habits).
+6. Contact your network administrator to confirm whether the service outage is due to maintenance or an in-house network issue. Network administrators can also monitor network traffic to confirm the presence of an attack, identify the source, and mitigate the situation by applying firewall rules and possibly rerouting traffic through a DoS protection service.
+7. Contact your ISP to ask if there is an outage on their end or even if their network is the target of the attack and you are an indirect victim. They may be able to advise you on an appropriate course of action."
+Improper Input Handling,1. Exposure of sensitive information.,"1. Update the version firmware or upload a patch to fix it.
+2. Minimize network exposure for all control system devices and/or systems, and ensure they are not accessible from the Internet.
+3. Locate control system networks and remote devices behind firewalls and isolate them from the business network.
+4. When remote access is required, use secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most current version available. Also recognize VPN is only as secure as its connected devices.
+5. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures."
+Information Leakage,1. Exposure of sensitive information.,"1. Know what personal and sensitive information is stored on your systems and who has access to it. Limit the data by only storing information you need for business operations. Ensure data is properly disposed of when no longer needed.
+2. Implement physical security best practices from the Federal Trade Commission (FTC): Protecting Personal Information: A Guide For Business and FTC: Cybersecurity for Small Business. (See CISA: Cybersecurity and Physical Security Convergence Guide for more information on the importance of physical security for IT assets.) 
+3. Implement cybersecurity best practices by: 
+    a. Identifying the computers or servers where sensitive personal information is stored. Note: do not store sensitive or personal data on internet-facing systems or laptops unless it is essential for business operations. If laptops contain sensitive data, encrypt them and train employees on proper physical security of the device. 
+    b. Encrypting sensitive information at rest and in transit.  
+    c. Implementing firewalls to protect networks and systems from malicious or unnecessary network traffic. 
+    d. Considering applying network segmentation to further protect systems storing sensitive or personal information.
+4. Ensure your cyber incident response and communications plans include response and notification procedures for data breach incidents. Ensure the notification procedures adhere to applicable state laws. "
+Insufficient Authentication,"1. Escalation of privilege.
+2. Denial of service.
+3. Information disclosure.","1. Update the version firmware or upload a patch to fix it.
+2. Minimize network exposure for all control system devices and/or systems, and ensure they are not accessible from the Internet.
+3. Locate control system networks and remote devices behind firewalls and isolate them from the business network.
+4. When remote access is required, use secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most current version available. Also recognize VPN is only as secure as its connected devices.
+5. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures."
+Insufficient Authorization,"1. Allow lower privileged users to escalate their privileges to an administrator level on the system.
+2. Cause loss of availability, integrity, and confidentiality with the local system and a disruption in communications with other connected devices.","1. Update the version firmware or upload a patch to fix it.
+2. Minimize network exposure for all control system devices and/or systems, and ensure they are not accessible from the Internet.
+3. Locate control system networks and remote devices behind firewalls and isolate them from the business network.
+4. When remote access is required, use secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most current version available. Also recognize VPN is only as secure as its connected devices.
+5. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures."
+Insufficient Process Validation,"1. Escalation of privilege.
+2. Denial of service.
+3. Information disclosure.","1. Update the version firmware or upload a patch to fix it.
+2. Minimize network exposure for all control system devices and/or systems, and ensure they are not accessible from the Internet.
+3. Locate control system networks and remote devices behind firewalls and isolate them from the business network.
+4. When remote access is required, use secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most current version available. Also recognize VPN is only as secure as its connected devices.
+5. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures."
+Other vuln,"1. Escalation of privilege.
+2. Information disclosure.","1. Update the version firmware or upload a patch to fix it.
+2. Minimize network exposure for all control system devices and/or systems, and ensure they are not accessible from the Internet.
+3. Locate control system networks and remote devices behind firewalls and isolate them from the business network.
+4. When remote access is required, use secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most current version available. Also recognize VPN is only as secure as its connected devices.
+5. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures."
+SQL Injection,"1. Confidentiality: Since SQL databases generally hold sensitive data, loss of confidentiality is a frequent problem with SQL Injection vulnerabilities.
+2. Authentication: If poor SQL commands are used to check user names and passwords, it may be possible to connect to a system as another user with no previous knowledge of the password.
+3. Authorization: If authorization information is held in a SQL database, it may be possible to change this information through the successful exploitation of a SQL Injection vulnerability.
+4. Integrity: Just as it may be possible to read sensitive information, it is also possible to make changes or even delete this information with a SQL Injection attack.",https://www.cisa.gov/uscert/security-publications/sql-injection
+SSL Injection,"1. This affects most current browsers and websites, but also includes any software that either references a vulnerable SSL/TLS library (e.g. OpenSSL) or implements the SSL/TLS protocol suite itself. 
+2. By exploiting this vulnerability in a likely web-based scenario, an attacker can gain access to sensitive data passed within the encrypted web session, such as passwords, cookies and other authentication tokens that can then be used to gain more complete access to a website (impersonating that user, accessing database content, etc.).","1. Disable SSL 3.0 support in system/application configurations.
+2. Update the version firmware or upload a patch to fix it."
+XSS Attack,1. Allow an unauthenticated attacker to inject arbitrary JavaScript in a specially crafted URL request where the response containing user data is returned to the web browser without being made safe to display.,https://www.cisa.gov/uscert/ics/Abstract-Cross-Site-Scripting-RP
+Hacking/IT Incident,"Medical data, patient privacy information leakage and disclosure.",Network Based Security Practices
+Improper Disposal,"Medical data, patient privacy information leakage and disclosure.",Employee Based Security - Train Employees to Develop Better Security Habits
+Loss,"Medical data, patient privacy information leakage and disclosure.",Physical Security Practices
+Other,"Medical data, patient privacy information leakage and disclosure.",Employee Based Security - Train Employees to Develop Better Security Habits
+Theft,"Medical data, patient privacy information leakage and disclosure.",Physical Security Practices
+Unauthorized Access/Disclosure,"Medical data, patient privacy information leakage and disclosure.",Network Based Security Practices
+Unknown,"Medical data, patient privacy information leakage and disclosure.",Unknown

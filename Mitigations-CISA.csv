@@ -1,0 +1,37 @@
+﻿Object,Mitigations
+Restrict or Discontinue Use of FTP and Telnet Services,Evaluate business needs and justifications to host files on alternative Secure File Transfer Protocol (SFTP) or HTTPS-based public sites.
+Restrict or Discontinue Use of FTP and Telnet Services,Use Secure Shell (SSH) for access to remote devices and servers.
+Restrict or Discontinue Use of Non-approved VPN Services,Investigate the business needs and justification for allowing traffic from non-approved VPN services.
+Restrict or Discontinue Use of Non-approved VPN Services,Identify such services across the enterprise and develop measures to add the application and browser plugins that enable non-approved VPN services to the denylist.
+Restrict or Discontinue Use of Non-approved VPN Services,Enhance endpoint monitoring to obtain visibility on devices with non-approved VPN services running. Enhanced endpoint monitoring and detection capabilities would enable an organization's IT security personnel to manage approved software as well as identify and remove any instances of unapproved software.
+Shut down or Decommission Unused Services and Systems,Cyber actors regularly identify servers that are out of date or end of life (EOL) to gain access to a network and perform malicious activities. These present easy and safe locations to maintain persistence on a network.
+Shut down or Decommission Unused Services and Systems,"Often these services and servers are systems that have begun decommissioning, but the final stage has not been completed by shutting down the system. This means they are still running and vulnerable to compromise."
+Shut down or Decommission Unused Services and Systems,Ensuring that decommissioning of systems has been completed or taking appropriate action to remove them from the network limits their susceptibility and reduces the investigative surface to be analyzed.
+Quarantine and Reimage Compromised Hosts,Reimage or remove any compromised systems found on the network.
+Quarantine and Reimage Compromised Hosts,Monitor and educate users to be cautious of any downloads from third-party sites or vendors.
+Quarantine and Reimage Compromised Hosts,Block the known bad domains and add a web content filtering capability to block malicious sites by category to prevent future compromise.
+Quarantine and Reimage Compromised Hosts,Sanitize removable media and investigate network shares accessible by users.
+Quarantine and Reimage Compromised Hosts,Improve existing network-based malware detection tools with sandboxing capabilities.
+"Disable Unnecessary Ports, Protocols, and Services","Identify and disable ports, protocols, and services not needed for official business to prevent would-be attackers from moving laterally to exploit vulnerabilities. This includes external communications as well as communications between networks."
+"Disable Unnecessary Ports, Protocols, and Services",Document allowed ports and protocols at the enterprise level.
+"Disable Unnecessary Ports, Protocols, and Services",Restrict inbound and outbound access to ports and protocols not justified for business use.
+"Disable Unnecessary Ports, Protocols, and Services",Restrict allowed access list to assets justified by business use.
+"Disable Unnecessary Ports, Protocols, and Services",Enable a firewall log for inbound and outbound network traffic as well as allowed and denied traffic.
+Restrict or Disable Interactive Login for Service Accounts,Audit the Active Directory (AD) to identify and document active service accounts.
+Restrict or Disable Interactive Login for Service Accounts,Restrict use of service accounts using AD group policy.
+Restrict or Disable Interactive Login for Service Accounts,Disallow interactive login by adding service account to a group of non-interactive login users.
+Restrict or Disable Interactive Login for Service Accounts,Continuously monitor service account activities by enhancing logging.
+Restrict or Disable Interactive Login for Service Accounts,"Rotate service accounts and apply password best practices without service, degradation, or disruption."
+Disable Unnecessary Remote Network Administration Tools,"If an attacker (or malware) gains access to a remote user’s computer, steals authentication data (login/password), hijacks an active remote administration session, or successfully attacks a vulnerability in the remote administration tool’s software, the attacker (or malware) will gain unrestricted control of the enterprise network environment. Attackers can use compromised hosts as a relay server for reverse connections, which could enable them to connect to these remote administration tools from anywhere."
+Disable Unnecessary Remote Network Administration Tools,Remove all remote administration tools that are not required for day-to-day IT operations. Closely monitor and log events for each remote-control session required by department IT operations.
+Manage Unsecure Remote Desktop Services,Implement secure remote desktop gateway solutions.
+Manage Unsecure Remote Desktop Services,Restrict RDP service trust across multiple network zones.
+Manage Unsecure Remote Desktop Services,Implement privileged account monitoring and short time password lease for RDP service use.
+Manage Unsecure Remote Desktop Services,Implement enhanced and continuous monitoring of RDP services by enabling logging and ensure RDP logins are captured in the logs.
+Credential Reset and Access Policy Review,Force password resets; revoke and issue new certificates for affected accounts/devices.
+Credential Reset and Access Policy Review,"If it is suspected that the attacker has gained access to the Domain Controller, then the passwords for all local accounts—such as Guest, HelpAssistant, DefaultAccount, System, Administrator, and kbrtgt—should be reset. It is essential that the password for the kbrtgt account is reset as this account is responsible for handling Kerberos ticket requests as well as encrypting and signing them. The account should be reset twice (as the account has a two-password history)."
+Credential Reset and Access Policy Review,"If it is suspected that the ntds.dit file has been exfiltrated, then all domain user passwords will need to be reset."
+Credential Reset and Access Policy Review,"Review access policies to temporarily revoke privileges/access for affected accounts/devices. If it is necessary to not alert the attacker (e.g., for intelligence purposes), then privileges can be reduced for affected accounts/devices to “contain” them."
+Patch Vulnerabilities,"Known vulnerabilities in external facing devices and servers should be patched immediately, starting with the point of compromise, if known."
+Patch Vulnerabilities,"If the point of compromise (i.e., the specific software, device, server) is known, but how the software, device, or server was exploited is unknown, notify the vendor so they can begin analysis and develop a new patch."
+Patch Vulnerabilities,Follow vendor remediation guidance including the installation of new patches as soon as they become available.
